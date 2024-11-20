@@ -8,4 +8,12 @@ import sqlite3
 
 @anvil.server.callable
 def get_gefaengnisse():
+  conn = sqlite3.connect(data_files['gefaengnisse.db'])
+  cursor = conn.cursor()
+  gefaegnisse = list(cursor.execute("SELECT GID,Name FROM Gefaengnisse"))
+  print(gefaegnisse)
   return [('TODO 1', 1), ('TODO 2', 2)]
+
+
+
+

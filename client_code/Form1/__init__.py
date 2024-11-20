@@ -17,7 +17,7 @@ class Form1(Form1Template):
     self.label_freie_zellen.text = "Freie Zellen TODO"
     self.repeating_zellen.items = [{'zellennummer': 'TODO', 'anzahl_häftlinge': 'TODO'}, 
                                    {'zellennummer': 'TODO', 'anzahl_häftlinge': 'TODO'}]
-
+   
   def gefaengnisse_drop_down_change(self, **event_args):
     """This method is called when an item is selected"""
     pass
